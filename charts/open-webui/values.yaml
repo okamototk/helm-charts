@@ -154,3 +154,17 @@ containerSecurityContext:
   #     - ALL
   # seccompProfile:
   #   type: "RuntimeDefault"
+tika:
+  enabled: false
+
+searxng:
+  enabled: false
+  searxng:
+    config:
+      use_default_settings: true
+      server:
+        secret_key: pleasechangeme
+      search:
+        formats:
+        - html
+        - json
